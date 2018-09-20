@@ -1,0 +1,50 @@
+page-account {
+.image {
+display: block;
+    margin: 0 auto;
+    text-align: center;
+    background: #ffebc7;
+    border-bottom: 1px solid #ecd9b5;
+}
+.my-image {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto;
+    background: #cccccc;
+    border: 1px solid #cccccc;
+}
+.item-input .label-md, .item-select .label-md, .item-datetime .label-md {
+    color: #1f88af;
+}
+.item-input ion-label, ion-label {color: #1f88af;}
+.item-md.item-input.ng-valid.item-input-has-value:not(.input-has-focus):not(.item-input-has-focus) .item-inner, .item-md.item-input.ng-valid.input-has-value:not(.input-has-focus):not(.item-input-has-focus) .item-inner { 
+    -webkit-box-shadow: none;
+   border-bottom-color:#dedede;
+    box-shadow: none;
+}
+.profile-btn input {
+    border: none;
+    border-radius: 2px;
+    font-size: 18px;
+    text-transform: uppercase;
+    background: #ffa911;
+    padding: 10px 30px;
+    height: auto;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 1px #d48700;
+}
+.profile-btn {
+    text-align: center;
+    padding: 20px 0;
+}
+ion-item.accunt-pd{
+    padding: 5px 16px !important;
+}
+.button-ios.activated, .button-md.activated{
+	background-color:#f39e09;
+}
+
+}

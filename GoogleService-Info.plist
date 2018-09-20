@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>454675155184-m5qq4r046rg9afbvbcidi9j2b303on7g.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.454675155184-m5qq4r046rg9afbvbcidi9j2b303on7g</string>
+	<key>API_KEY</key>
+	<string>AIzaSyC57SpD30doJefzmqhsTuzWC7QvsnN2WAA</string>
+	<key>GCM_SENDER_ID</key>
+	<string>454675155184</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.knockoutsystem.astrorule</string>
+	<key>PROJECT_ID</key>
+	<string>astrorule-kosys</string>
+	<key>STORAGE_BUCKET</key>
+	<string>astrorule-kosys.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true></true>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false></false>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:454675155184:ios:fe4a2b64795bd2d0</string>
+	<key>DATABASE_URL</key>
+	<string>https://astrorule-kosys.firebaseio.com</string>
+</dict>
+</plist>

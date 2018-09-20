@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-navbar>
+    <ion-buttons left>
+      <button ion-button clear (click)="closeView()">
+        <ion-icon name="ios-arrow-back" class="backbtn"></ion-icon>  
+      </button>
+    </ion-buttons>
+    <ion-title>Help</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content no-padding>
+  <ion-refresher (ionRefresh)="doRefresh($event)">
+    <ion-refresher-content
+      pullingIcon="arrow-dropdown"
+      pullingText="Pull to refresh"
+      refreshingSpinner="circles"
+      refreshingText="Refreshing...">
+    </ion-refresher-content>
+  </ion-refresher>
+  <img [src]="image" >
+  <div padding [innerHTML]="info" class="help-top-text"></div>
+  <ion-list no-padding>
+    <ion-item *ngFor="let q of questions" padding class="help-listing">
+      <h3>{{q.title}}</h3>
+      <p text-wrap>{{q.info}}</p>
+    </ion-item>
+  </ion-list>
+</ion-content>

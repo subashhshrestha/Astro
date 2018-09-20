@@ -1,0 +1,23 @@
+page-start-screen {
+    .swiper-pagination-bullet-active {
+        background: #ffa910;
+    }
+    .get-started h2 {
+        max-width: 400px;
+        margin: 0 auto;
+        font-size: 20px;
+        font-weight: normal;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+    .get-started button {
+        background-color: #ffa911 !important;
+        font-size: 20px;
+        font-weight: bold;
+        padding: 25px 30px;
+        display: block;
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+}

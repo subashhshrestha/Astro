@@ -1,0 +1,20 @@
+page-astrolist {
+ion-list.astrologer-single {
+    border-bottom: 1px solid #e8e8e8;
+    box-shadow: 0 3px 15px 0px #ececec;
+    margin-bottom: 6px;
+}
+
+ion-list.astrologer-single h2 {
+    font-size: 18px;
+    margin: 23px 0 0 0;
+}
+ion-list.astrologer-single img {
+    float: left;
+    width: 70px;
+    height: auto;
+    display: block;
+    margin: 0 15px 0 0;
+}
+}
+

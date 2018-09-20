@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "454675155184",
+    "firebase_url": "https://astrorule-kosys.firebaseio.com",
+    "project_id": "astrorule-kosys",
+    "storage_bucket": "astrorule-kosys.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:454675155184:android:fe4a2b64795bd2d0",
+        "android_client_info": {
+          "package_name": "com.knockoutsystem.astrorule"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "454675155184-n7er7c6g9plvj6f87qg7o7arjmch4vr4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDAX1eDCmjhTvPh2R4Xs595rnejc7vY3yI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

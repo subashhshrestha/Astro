@@ -1,0 +1,23 @@
+page-help {
+.help-top-text p {
+    margin-bottom: 0;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.help-top-text {
+    padding-top: 0 !important;
+    margin-bottom: 0 !important;
+}
+ion-item.help-listing p {
+    font-size: 13px ;
+    line-height: 18px ;
+}
+ion-item.help-listing h3 {
+    font-size: 20px;
+}
+ion-item.help-listing {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+}

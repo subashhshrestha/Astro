@@ -1,0 +1,103 @@
+page-home {
+
+.welcome-msg{
+    margin-top: 10px; 
+}
+.chat-img-wrap {
+    float: left;
+    width: 40px;
+    border: 1px solid #efefef;
+    border-radius: 50%;
+    height: 40px;
+    display: inline-block;
+    overflow:hidden;
+}
+.chat-text {
+    margin: 0 0 0 45px;
+    background: #f7f7f7;
+    border-radius: 4px;
+    padding: 5px 15px;
+        border: 1px solid #eaeaea;
+}
+.question .chat-img-wrap {
+    float: right;
+}
+.question .chat-text {
+    margin: 0 45px 0 0;
+    background: #fff2dd;
+}
+.chat-text p {
+    font-size: 15px;
+    line-height: 20px;
+}
+.answer .chat-text {
+    background:#ebfaff;
+}
+p.message-date {
+    display: block;
+    font-size: 11px;
+    padding: 0;
+    margin: 0;
+    font-style: italic;
+    color: #6e9cad;
+    float: right;
+}
+.question p.message-date {
+    float: left;
+}
+.question .chat-text {
+    border: 1px solid #ffe5bc;
+}
+.answer .chat-text {
+    border: 1px solid #c9f1ff;
+}
+ion-footer {
+    border-top: 1px solid #f7f7f7;
+    box-shadow: 0 0px 4px 2px #f7f7f7;
+}
+.rating ul {
+    display: inline-block;
+    float: right;
+    margin: 0;
+}
+.rating {
+    display: block;
+    overflow: hidden;
+    clear: both;
+}
+.question .rating ul, .system .rating ul, .info .rating ul {
+    float: left;
+    padding: 0; display: none;
+}
+button.send-btn img{
+    width: 18px;
+    margin: 0px 6px 0 0;
+}
+button.send-btn {
+    background: #ffa911;}
+.button-ios.activated, .button-md.activated{
+	background-color:#f39e09;
+}   
+textarea#question {
+    width: 65%; resize:none;border:none;
+} 
+.item-md .item-button, .item-ios .item-button {
+    padding: 0 0.6em;
+    height: 34px;
+    font-size: 1.4rem;
+    width: 92px; border-radius:2px;
+}
+p.personName {
+    display: block;
+    overflow: hidden;
+    float: right;
+    clear: both;
+    padding: 0;
+    margin: 0;
+    font-size: 11px;
+    line-height: 16px;
+    margin-top: -5px;
+    color: #bb882d;
+}
+
+}

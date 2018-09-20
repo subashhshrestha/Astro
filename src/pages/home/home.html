@@ -1,0 +1,61 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>AstroRule</ion-title>
+    <ion-buttons end>
+      <ion-spinner name="circles" *ngIf="loading"></ion-spinner>
+    </ion-buttons>
+  </ion-navbar>
+  <img src="assets/images/astrorule-app-banner.jpg">
+</ion-header>
+
+<ion-content padding>
+  <div class="welcome-msg" *ngIf="data">
+      <div class="chat-img-wrap">
+        <img src="assets/images/app-icon.png" alt="Astrorule">
+      </div>
+      <div class="chat-text">
+        <p *ngIf="showWelcome" class="message system" text-wrap innerHTML="{{welcome_message}}"></p>  
+      </div>
+  </div>
+  <div class="welcome-msg" *ngIf="data">
+    <div class="chat-img-wrap">
+      <img src="assets/images/app-icon.png" alt="Astrorule">
+    </div>
+    <div class="chat-text">
+      <p class="message system" text-wrap innerHTML="{{extraData}}"></p>  
+    </div>
+  </div>
+  
+  <ion-list class="chat-messages" >
+    <ion-item class="{{c.type}}" *ngFor="let c of chatData" id="{{c.answer_id}}" (click)="ratingChange(c.answer_id)">
+      <div class="chat-img-wrap">
+        <img [src]="c.image" onerror="this.src='assets/images/app-icon.png'">
+       </div> 
+      <div class="chat-text"> 
+        <p class="message" text-wrap innerHTML="{{c.message}}"></p>
+      </div>
+      <div class="chat-date">
+        <p class="message-date">{{c.date}}</p>
+        <p class="personName">{{c.astro_name}}</p>
+      </div>
+      <div class="rating" *ngIf="(c.type=='answer')">
+          <rating [(ngModel)]="c.rating" 
+          readOnly="false" 
+          emptyStarIconName="star-outline" 
+          halfStarIconName="star-half" 
+          starIconName="star" 
+          nullable="false" 
+          (ngModelChange)="changedRating($event)"></rating>
+      </div>
+    </ion-item>
+  </ion-list>
+</ion-content>
+<ion-footer>
+  <ion-item>
+    <textarea id="question" item-left placeholder="Type your question here" [(ngModel)]="question" rows="1" cols="30" (keyup)="resizeTextarea()" name="question" (ngModelChange)="resizeTextarea()"></textarea>
+    <button item-right ion-button (click)="askQuestion()" class="send-btn"  [attr.disabled]="askingQuestion?true:fase"> <img src="assets/images/send-icon.png"/> Send</button>
+  </ion-item>
+</ion-footer>

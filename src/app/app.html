@@ -1,0 +1,39 @@
+<ion-menu [content]="content">
+  <ion-header>
+    <div (click)="openAccount()" padding>
+      <div class="astro-user">
+        <img [src]="userImage">  
+      </div>
+      <h1 class="astro-user-name">{{clientname}}</h1>
+      <div class="astro-user-date"><img src="assets/images/calender-icon.png" >{{dob}}
+      </div>
+    </div>
+  </ion-header>
+
+  <ion-content no-padding>
+    <div class="astro-cost-nav">
+      <p class="title-cost">Question Price</p><p class="cost-amount">{{price}}</p>
+    </div>
+    <ion-list no-padding>
+      <button no-padding menuClose ion-item *ngFor="let p of roots" (click)="openPageAsRoot(p)">
+        <img [src]="p.image" class="astro-nav-img" >
+        <p class="astro-nav-title">{{p.title}}</p>
+      </button>
+
+      <button no-padding menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">
+        <img [src]="p.image" class="astro-nav-img" >
+        <p class="astro-nav-title">{{p.title}}</p>
+      </button>
+
+      <button no-padding menuClose ion-item *ngIf="hasUpdate" (click)="update()">
+         <img src="assets/images/update-icon.png" class="astro-nav-img" >
+        <p class="astro-nav-title">Update App</p>
+      </button>
+
+    </ion-list>
+  </ion-content>
+
+</ion-menu>
+
+<!-- Disable swipe-to-go-back because it's poor UX to combine STGB with side menus -->
+<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>
